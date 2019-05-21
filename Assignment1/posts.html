@@ -3,10 +3,18 @@
 	<link rel="stylesheet" type="text/css" href="styles.css" >
 	<script type="text/javascript" src="scripts.js"></script>
 </head>
-<body>
+<body onload="renderPosts()">
 	<div id="navbar">
 		<a href="home.html">Home</a>
 		<a href="posts.html">Posts</a>
 		<a href="about.html">About</a>
+	</div>
+	<div class="title">
+		<h1>Posts</h1>
+	</div>
+	<div class="container" id="renderPosts">
+	</div>
+	<div class="row">
+		<input type="button" id="clearButton" value="Clear Posts" onclick="clearPosts()">
 	</div>
 </body>
